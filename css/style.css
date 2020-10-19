@@ -1,0 +1,222 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+}
+body{
+  font-family: "Yu Gothic Medium","游ゴシック",sans-serif;
+}
+
+/*home---------------------------------*/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+#top{
+  background-image: url(../images/home-back.jpg);
+  min-height: 50vh;
+}
+.pheader{
+  color: #fff;
+  text-align: center;
+}
+.page-title{
+  padding: 100px 100px 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 5rem;
+}
+.main-nav{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+}
+.main-nav a{
+  margin-right: 30px;
+  color: #fff
+}
+.main-nav a:hover{
+  color: #0090aa;
+}
+
+.main-title{
+  font-size: 3rem;
+  text-align:  center;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 30px 0 30px;
+}
+
+.wrapper{
+  text-align: left;
+  padding-left: 30%;
+}
+
+.sub-title{
+  font-size: 1.5rem;
+  padding: 30px 0px 10px;
+  margin-right: 50%;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+}
+
+.container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 30px;
+  width: 75%;
+}
+
+.foot{
+  text-align: center;
+  background-color: #aaa;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+.item{
+  width: 50%;
+}
+p{
+  line-height: 2;
+}
+/*history------------------------------*/
+.year{
+  background: #b4c1d1;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 50px 100px 0;
+  padding-top: 35px;
+}
+.card{
+  margin-left: 150px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-bottom: 40px;
+  border-left: 1px solid;
+  text-align: center;
+}
+.comment{
+  text-align: left;
+}
+.year-2{
+  background: #b4c1d1;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 0 100px 0;
+  padding-top: 35px;
+}
+
+/*future------------------------*/
+.road-map{
+  border: #e0e0e0 1px solid;
+  width: 50%;
+  margin: 30px 0 30px;
+  text-align: center;
+}
+.study{
+  padding: 10px 0 10px;
+}
+span{
+  font-weight: bold;
+}
+.small-title{
+  font-size: 1.5rem;
+  margin: 30px 0 10px;
+}
+
+/*contact-----------------------*/
+form div{
+  margin-bottom: 15px;
+}
+label{
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+  border: #e0e0e0 1px solid;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="email"]{
+  width: 100%;
+  max-width: 240px;
+}
+textarea{
+  width: 100%;
+  max-width: 500px;
+  height: 6rem;
+}
+input[type="submit"]{
+  padding: 10px 20px;
+  background-color: #a9ffdd;
+  border-radius: 10px;
+}
+.caution{
+  color: #bbb;
+}
+
+/*mobile----------------------*/
+@media screen and (max-width:600px){
+  body{
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  /*home*/
+  #top{
+    min-height: 100vh;
+  }
+  .header-wrapper{
+    padding-top: 50%;
+  }
+  .page-title{
+    font-size: 2rem;
+    padding: 100px 0 30px;
+  }
+  .main-nav{
+    max-width: 100vh;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .main-nav a{
+    margin-right: 15px;
+  }
+  .wrapper{
+    text-align: left;
+    padding-left: 0;
+  }
+  .myself{
+  width: 100%;
+  }
+  p{
+    line-height: 2.5;
+  }
+  p .text{
+    font-size: 2rem;
+  }
+
+/*history*/
+  .year{
+    margin-left: 0;
+  }
+  .year-2{
+    margin-left: 0;
+  }
+  .card{
+    margin-left: 15%;
+  }
+/*future*/
+  .road-map{
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+}
